@@ -3,14 +3,28 @@
   <head>
     <title>Qstomer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script>
+    </script>
   </head>
   <body>
-    <div data-role="page">
+    <div data-role="page" id="home">
       <div role="main" class="ui-content">
-        <img src="delhaize.png" style="display: block; margin-left: auto; margin-right: auto"/>
+        <a href="#delhaize" data-rel="dialog" data-transition="flip">
+          <img src="delhaize.png" style="display: block; margin-left: auto; margin-right: auto"/>
+        </a>
+      </div>
+    </div>
+    <div data-role="page" id="delhaize">
+      <div data-role="header">
+        <h1>Delhaize</h1>
+      </div>
+      <div role="main" class="ui-content">
+        <a href="#home">
+          <img src="0460612365216.png" style="display: block; margin-left: auto; margin-right: auto"/>
+        </a>
       </div>
     </div>
   </body>
